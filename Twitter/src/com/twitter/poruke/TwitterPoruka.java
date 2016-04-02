@@ -22,7 +22,7 @@ public class TwitterPoruka {
 	}
 	/**
 	 * metoda koja postavlja ime korisnika na vrednost parametra
-	 * @param korisnik
+	 * @param korisnik ime korisnika
 	 */
 	public void setKorisnik(String korisnik) {
 		if (korisnik==null || korisnik == "")
@@ -39,7 +39,7 @@ public class TwitterPoruka {
 	}
 	/**
 	 * metoda koja postavlja sadrzaj poruke na vrednost parametra
-	 * @param poruka
+	 * @param poruka sadrzaj poruke
 	 */
 	public void setPoruka(String poruka) {
 		if (poruka==null || poruka.length()>140)
