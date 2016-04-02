@@ -49,6 +49,8 @@ public class TwitterPorukaTest {
 	public void testSetPorukaPrekoracenje(){		
 		//String od 150 karaktera
 		String poruka = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+		/*Ako atribut klase poruka ima vrednost null, zbog greske u metodi "this.poruka.length()>140"
+		 * umesto "poruka.length()>140", oborio bi se test*/
 		tp.setPoruka(poruka);
 	
 	}
@@ -56,6 +58,7 @@ public class TwitterPorukaTest {
 	public void testSetPoruka() {
 		String poruka = "Ovo je poruka.";
 		tp.setPoruka(poruka);
+		//zbog greske u metodi "return "poruka";" umesto "return poruka;", oborio bi se test
 		assertEquals("Ovo je poruka.", tp.getPoruka());
 	}
 
