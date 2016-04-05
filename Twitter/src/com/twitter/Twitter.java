@@ -40,6 +40,7 @@ public class Twitter {
 	 * @param maxBroj kapacitet niza
 	 * @param tag tag u poruci
 	 * @return rezultat
+	 * @throws RuntimeException
 	 */
 	public TwitterPoruka[] vratiPoruke(int maxBroj, String tag) {
 		if (tag==null || tag == "")

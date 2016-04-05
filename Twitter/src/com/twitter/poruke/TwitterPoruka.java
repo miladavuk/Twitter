@@ -23,6 +23,7 @@ public class TwitterPoruka {
 	/**
 	 * metoda koja postavlja ime korisnika na vrednost parametra
 	 * @param korisnik ime korisnika
+	 * @throws RuntimeException
 	 */
 	public void setKorisnik(String korisnik) {
 		if (korisnik==null || korisnik == "")
@@ -40,6 +41,7 @@ public class TwitterPoruka {
 	/**
 	 * metoda koja postavlja sadrzaj poruke na vrednost parametra
 	 * @param poruka sadrzaj poruke
+	 * @throws RuntimeException
 	 */
 	public void setPoruka(String poruka) {
 		if (poruka==null || poruka.length()>140)
